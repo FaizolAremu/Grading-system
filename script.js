@@ -14,12 +14,12 @@ function checkGrade(event) {
     let progressWidth = (cgpa / 5) * 100;
 
     // Validation
-    if (cgpa < 1 || cgpa > 5) {
+    if (cgpa < 0.01 || cgpa > 5) {
 
         resultHeading.innerHTML = "Invalid CGPA";
 
         resultmessage.innerHTML =
-            "Please enter a CGPA between 1.00 and 5.00";
+            "Please enter a CGPA between 0.01 and 5.00";
 
         resultCard.style.borderColor = "#ef4444";
 
