@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <!-- Hero -->
+    <section class="hero">
+
+        <h1>University CGPA Classification System</h1>
+
+        <p>
+            Instantly check your academic class based on your CGPA.
+        </p>
+
+    </section>
+
+
+
+    <!-- Main Card -->
+    <section class="cgpa-section">
+
+        <form class="cgpa-card" onsubmit="checkGrade(event)">
+
+            <h2>Check Your Result</h2>
+
+            <input type="number" id="cgpa" step="0.01" placeholder="Enter your CGPA">
+
+            <button onclick="">
+                Check Classification
+            </button>
+
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+
+                <div class="progress-bar" id="progressBar"></div>
+
+            </div>
+
+
+            <!-- Result -->
+            <div class="result-box" id="resultBox">
+
+                <h3 id="gradeTitle">--</h3>
+
+                <p id="message">
+                    Your classification will appear here.
+                </p>
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
